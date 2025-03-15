@@ -13,3 +13,20 @@ box-shadow: 0 0 30px grey;
 }
 p {padding: 10px;
 }
+main {width: 500px;
+}
+aside {width:auto ;
+margin: auto;
+border: 1px solid rgb(0 0 0, 0 2,);
+background-color: 1rem;
+color: azure;
+text-align: center;}
+aside img {width: 200px;
+    height: auto;align-items: normal;}
+main img {width: 150px; 
+height: auto;}
+p {padding: 0;}
+footer {margin-top: 20px;
+border-top: 2px solid beige;
+text-align: center;}
+
