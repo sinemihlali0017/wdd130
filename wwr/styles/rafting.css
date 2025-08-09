@@ -115,7 +115,6 @@ article {
     width: 125px;
 }
 
-
 .history {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -137,7 +136,6 @@ article {
     color: white;
 }
 
-
 .adventures {
     padding: 20px;
     background-color: var(--primary-color);
@@ -149,7 +147,6 @@ article {
     color: var(--accent2-color);
     margin-bottom: 20px;
 }
-
 
 .adventure-gallery {
     display: grid;
@@ -216,4 +213,23 @@ footer .socialmedia img {
 
 footer .socialmedia img:hover {
     transform: scale(1.1);
+}
+
+
+.history-image {
+    position: relative; 
+}
+
+.History-text h2 {
+    position: absolute;
+    top: 10px;       
+    left: 50%;       
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 4px 10px;
+    background-color: rgba(54, 65, 62, 0.7); 
+    color: white;
+    border-radius: 4px;
+    pointer-events: none; 
+    z-index: 2;
 }
