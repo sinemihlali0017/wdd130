@@ -281,3 +281,63 @@ button:hover {
   padding: 2rem;
 }
 
+/* === Your new styles appended === */
+.cta {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--accent1-color);
+  color: white;
+  border-radius: 8px;
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.about-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.trips-table {
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 10px;
+  border: 1px solid var(--accent1-color);
+  text-align: center;
+}
+
+.trips-table th {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
