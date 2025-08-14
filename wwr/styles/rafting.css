@@ -1,4 +1,4 @@
-  :root {
+ :root {
   --primary-color: #beb2c8;
   --secondary-color: #8d8d92;
   --accent1-color: #5d5e60;
@@ -146,13 +146,16 @@ article {
   margin-bottom: 20px;
 }
 
-.adventure-gallery {
+.adventure-gallery,
+main section:nth-of-type(3) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
+  justify-items: center;
 }
 
-.adventure-gallery figure {
+.adventure-gallery figure,
+main section:nth-of-type(3) figure {
   margin: 0;
   background-color: var(--secondary-color);
   border-radius: 8px;
@@ -164,7 +167,8 @@ article {
   align-items: center;
 }
 
-.adventure-gallery img {
+.adventure-gallery img,
+main section:nth-of-type(3) figure img {
   width: 100%;
   height: 140px;
   object-fit: cover;
@@ -172,13 +176,16 @@ article {
   border-radius: 8px 8px 0 0;
 }
 
-.adventure-gallery figcaption {
+.adventure-gallery figcaption,
+main section:nth-of-type(3) figure figcaption {
   margin-top: 8px;
   font-weight: bold;
   color: white;
   text-align: center;
   padding: 5px 10px;
   width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 0 0 8px 8px;
 }
 
 footer {
@@ -207,10 +214,6 @@ footer .socialmedia img:hover {
   transform: scale(1.1);
 }
 
-.history-image {
-  position: relative;
-}
-
 .History-text h2 {
   position: absolute;
   top: 10px;
@@ -229,12 +232,6 @@ footer .socialmedia img:hover {
   width: 100%;
   height: 300px;
   border: 0;
-}
-
-.figure {
-  display: inline-block;
-  text-align: center;
-  margin: 10px;
 }
 
 form {
@@ -262,31 +259,4 @@ button {
 
 button:hover {
   background-color: var(--primary-color);
-}
-
-
-main section:nth-of-type(3) figure {
-  display: inline-block;
-  width: 200px;
-  margin: 10px;
-  text-align: center;
-}
-
-main section:nth-of-type(3) figure img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid var(--accent1-color);
-}
-
-main section:nth-of-type(3) figure figcaption {
-  margin-top: 8px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  padding: 5px 10px;
-  width: 100%;
-  background-color: var(--secondary-color);
-  border-radius: 0 0 8px 8px;
 }
